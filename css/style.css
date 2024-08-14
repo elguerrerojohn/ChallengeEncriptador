@@ -1,0 +1,227 @@
+* {
+    /* Reset CSS */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fuentes/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fuentes/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../fuentes/Roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+
+
+/* variables css */
+:root {
+    --fondo: #F3F5FC;
+    --titulo1: font-family: 'Roboto-Bold.ttf';
+    --titulo2: font-family: 'Roboto-Thin.ttf';
+    width: 100%;  
+  }
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.row {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+
+.container {
+    padding: 1rem 4rem;
+    height: auto;
+    display: flex;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 0 0;
+}
+
+header {
+    padding: 1rem 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+}
+
+#header img {
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 3rem;
+}
+
+.sidebar__izquierdo {
+    display: grid;
+}
+
+#sugerencia {
+    display: flex;
+    justify-content: center;
+}
+
+.botones{
+    position: relative
+}
+
+textarea {
+    resize: none !important;
+    background-color: var(--fondo);
+    border: none !important;  
+}
+label {
+    text-align: center;
+}
+
+#sidebar__derecho {
+    background-color: #FFFFFF;
+    border-radius: 1rem 1rem;
+    margin-top: -4rem;
+    margin-left: 1rem;
+}
+#sidebar__derecho img {
+    display: inline-block;
+    margin-top: 3rem;
+    text-align: center;
+    border-radius: 1rem 1rem;
+}
+
+.titulo1 {
+    font-family: var(--titulo1);
+    font-weight: 700;
+    color: #275082;
+}
+
+strong {
+    color: #343A40 !important;
+    font-weight: 600;
+}
+
+.ph-center::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 100px;/* Centrado vertical */
+    font-family: var(--titulo1);
+    font-weight: 700;
+    color: #275082;
+    margin-right: 1.2rem;
+  }
+
+#sidebar__derecho p {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+
+#sugerencia p {
+    margin-bottom: 0;
+    font-family: var(--titulo2);
+    font-weight: 100;
+}
+
+#sugerencia  .bi-exclamation-lg::before {
+    content: "\f63c";
+    border-radius: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    margin-right: 0.2rem;
+    background-color: #97999D;
+}
+
+.titulo2 {
+    font-weight: 100;
+    color:#495057;
+    font-size: 0.7rem !important;
+    
+}
+
+.btn-primary {
+    border-radius: 1rem 1rem 1rem 1rem !important;
+    border: 2px solid #0A3871 !important;
+    background-color: #0A3871 !important;
+    margin-top: 1rem !important;
+    padding: 0.5rem 1rem;
+    font-family: var(--titulo2);
+    width: 10rem;
+    font-size: 0.8rem;
+}
+
+.btn-secondary {
+    border-radius: 1rem 1rem 1rem 1rem !important;
+    margin-top: 1rem !important;
+    padding: 0.5rem 1rem;
+    font-family: var(--titulo2);
+    width: 10rem;
+    font-size: 0.8rem;
+}
+
+#ocultar__textarea textarea {
+    background-color: #FFF;
+    margin: 1rem 1rem;
+    margin-top: 4rem;
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+
+
+/* CSS PARA OCULTAR ELEMNTOS DEL DIV #sidebar__derecho*/
+#ocultar__textarea {
+    display: none; /* Oculta div1 por defecto */
+}
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #0A3871;
+    font-family: var(--titulo2);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+    margin-top: 2rem !important;
+
+}
+footer span {
+        font-weight: 700;
+        text-align: center;
+    }
+
+.copyright {
+        text-align: center;
+    }
+
+
+#sidebar__derecho button {
+        border-radius: 1rem 1rem 1rem 1rem !important;
+        border: 2px solid #0A3871 !important;
+        background-color: #0A3871 !important;
+        margin-top: 1rem !important;
+        padding: 0.5rem 1rem;
+        font-family: var(--titulo2);
+        width: 10rem;
+        font-size: 0.8rem;
+        color: #FFFFFF;
+        margin-bottom: 1rem;
+    }
