@@ -72,14 +72,13 @@ function desencriptarTexto() {
 }
 
 //función para copiar el texto
-// Función para copiar el texto
 document.getElementById("copyButton").addEventListener("click", function() {
     // Obtén el texto del textarea
     const textarea = document.getElementById("descifrar");
     const textToCopy = textarea.value;
     textarea.select();
 
-    // Usa la API de portapapeles para copiar el texto
+    // API de portapapeles para copiar el texto
     navigator.clipboard.writeText(textToCopy);
 });
 
