@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encriptador de Texto</title>
+    </head>
+<body class="row">
+    <header>
+         <div class="col-xs-3" id="header">
+            <img src="images/logo.png">
+         </div>
+    </header>
+    <div class="container">
+        <div class="col-sm-8 col-xs-7">
+             <div class="sidebar__izquierdo">
+                <textarea class="ph-center titulo1" name="textarea" rows="10" cols="50" id="cifrar" placeholder="Ingrese el texto aquí"></textarea>  
+             </div>
+             <div id="sugerencia"> 
+                 <i name="icon" class="bi bi-exclamation-lg"></i>
+                 <p name="texto" class="titulo2"> Solo letras minusculas y sin acentos </p>
+             </div>
+             <button class="btn btn-primary" onclick="encriptarTexto()"> Encriptar </button>
+             <button class="btn btn-secondary" onclick="desencriptarTexto()"> Desencriptar </button>
+        </div>
+        <div class="col-sm-4 col-xs-5" id="sidebar__derecho">
+             <div id="ocultar__textarea">
+             <textarea name="textarea" rows="10" cols="20" id="descifrar"></textarea>
+             <br>
+             <button id="copyButton">Copiar Texto</button>
+            </div>  
+             <div id="ocultar__elementos">
+                <img src="images/imagen-busquedad.png">
+                <p class="titulo1"> <strong> Ningún mensaje fue <br> encontrado. </strong> </p>
+                <small class="titulo2"> Ingrese el texto que desees encriptar o desencriptar </small>
+             </div>
+        </div>
+
+    </div>
+    <footer class="row">
+        <div class="copyright"> Desarrollado por <span> John Guerrero</span>, 2024  </div>
+    </footer> 
+</body>
+
+<script src="app.js"></script>
+</html>
